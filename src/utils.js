@@ -18,5 +18,32 @@ export function VectorUtils() {
         return array.filter((v, i, a) => a.indexOf(v) === i);
     }
 
-    return { getRandomIndex, getAllIndexOf, getUnique}
-} 
+    function getVectorofRandomIndices(min, max, length, unique) {
+        let indices = new Array(length);
+
+        if ((max - min) < length) {
+            unique = false
+        }
+
+        if (unique) {
+            for (let i = 0; i < length; i++) {
+                let index = this.getRandomIndex(min, max);
+                while (indices.indexOf(index) > 0) {
+                    index = this.getRandomIndex(min, max);
+                }
+
+                indices[i] = index;
+            }
+
+        }
+        else {
+            for (let i = 0; i < length; i++) {
+                indices[i] = this.getRandomIndex(min, max);
+            }
+        }
+
+        return indices;
+    }
+
+    return { getRandomIndex, getAllIndexOf, getUnique, getVectorofRandomIndices }
+}

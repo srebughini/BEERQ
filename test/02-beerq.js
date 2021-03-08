@@ -1,7 +1,7 @@
 import * as assert from 'assert'
 import BeerQuote from "../src/beerq.js";
 
-let beerq = BeerQuote()
+let beerq = BeerQuote("eng")
 
 describe('BeerQuote.getQuoteFromIndex()', function () {
   let expected = {

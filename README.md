@@ -31,10 +31,10 @@ let authorList = beerQuote.getAuthorList());
 let randomQuote = beerQuote.getRandomQuote();
 
 // Extract quotes of a specific author
-let authorQuote = beerQuote.getQuotesFromAuthor("Benjamin Franklin");
+let authorQuotes = beerQuote.getQuotesFromAuthor("Benjamin Franklin");
 
 // Extract a random quote of a specific author
-let authorQuote = beerQuote.getQuotesFromAuthor("W. C. Fields");
+let randomAuthorQuote = beerQuote.getRandomQuoteFromAuthor("W. C. Fields");
 ```
 
 ## 3. Contacts

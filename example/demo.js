@@ -2,6 +2,9 @@ import BeerQuote from "../src/beerq.js"
 
 let beerQuote = BeerQuote();
 
-console.log(beerQuote.getQuoteFromIndex(1));
-console.log(beerQuote.getQuoteFromAuthor("Horace"));
-console.log(beerQuote.getRandomQuote());
+console.log(beerQuote.getAuthorList());
+//console.log(beerQuote.getQuoteFromIndex(1));
+console.log(beerQuote.getQuotesFromIndices([32,10]));
+//console.log(beerQuote.getQuotesFromAuthor("Benjamin Franklin"));
+//console.log(beerQuote.getRandomQuote());
+//console.log(beerQuote.getRandomQuoteFromAuthor("W. C. Fields"));

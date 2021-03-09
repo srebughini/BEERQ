@@ -10,7 +10,7 @@
 </p>
 
 ## 1. Installation
-**BeerQ** is part of the [ASALI](https://srebughini.github.io/ASALI/) project and it is a **JavaScript** library to get **beer related quotes** in different languages.  
+**BeerQ** is part of the [ASALI](https://srebughini.github.io/ASALI/) project and it is a **JavaScript** library to get **beer related quotes** in different languages. You can check some of them [here](https://srebughini.github.io/BEERQ/).  
 Its [npm package](https://www.npmjs.com/package/beerq) can be installed as follow:
 
 ```bash

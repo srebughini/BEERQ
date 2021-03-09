@@ -2,7 +2,7 @@ import { VectorUtils } from "./utils.js"
 import { quotes } from "./quotes.js"
 
 
-export default function BeerQuote(language = "eng") {
+export function BeerQuote(language = "eng") {
     let _quoteDictList = quotes("eng");
     let _numberOfQuotes = _quoteDictList.length;
     let _authorList = _quoteDictList.map(quoteDict => quoteDict.author);

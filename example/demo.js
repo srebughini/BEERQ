@@ -1,4 +1,4 @@
-import BeerQuote from "../src/beerq.js"
+import { BeerQuote } from "../src/beerq.js"
 
 let beerQuote = BeerQuote("eng");
 

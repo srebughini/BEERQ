@@ -1,5 +1,5 @@
 import * as assert from 'assert'
-import BeerQuote from "../src/beerq.js";
+import { BeerQuote } from "../src/beerq.js";
 
 let beerq = BeerQuote("eng")
 

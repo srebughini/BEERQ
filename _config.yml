@@ -2,12 +2,12 @@
 title: BeerQ
 email: ste.rebu@outlook.it
 url: https://srebughini.github.io/BEERQ/
-description: "A Javascript library to randomly generate beer quotes"
+description: "An Opensource JavaScript library to randomly generate beer quotes"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
-  links: '#219ab3'
+  links: '#DB901F'
 
 # Footer settings
 footer: Your Website

@@ -1,6 +1,6 @@
 {
   "name": "beerq",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "main": "./src/beerq.js",
   "repository": {
     "type": "git",
@@ -11,7 +11,11 @@
   },
   "keywords": [
     "beer",
-    "quotes"
+    "quotes",
+    "daily",
+    "motivation",
+    "quote",
+    "inspiration"
   ],
   "author": "srebughini",
   "license": "GPL-3.0",

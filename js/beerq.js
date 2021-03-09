@@ -1,10 +1,9 @@
-import { BeerQuotes } from "beerq"
+import { BeerQuote } from "./../src/beerq.js"
 
-let beerquotes = BeerQuotes("eng");
-
-function setRandomQuote(quoteId, authorId)
+window.getQuote = function getQuote()
 {
-    let randomQuote = beerquotes.getRandomQuote();
-    document.getElementById(quoteId).innerHTML = randomQuote.quote;
-    document.getElementById(authorId).innerHTML = randomQuote.author;
+  let beerquotes = BeerQuote("eng");
+  let randomQuote = beerquotes.getRandomQuote();
+  document.getElementById("quote").innerHTML = "<i>" + randomQuote.quote + "<i>";
+  document.getElementById("author").innerHTML = randomQuote.author;
 }

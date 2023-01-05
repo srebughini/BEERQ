@@ -39,6 +39,13 @@ describe('BeerQuote.getQuotesFromIndices()', function () {
     { quote: 'Fermentation equals civilisation.', author: 'John Ciardi' }
   ]
   it('should return ' + expected + ' when for indeces: 32 and 10', function () {
-    assert.deepEqual(beerq.getQuotesFromIndices([32,10]), expected);
+    assert.deepEqual(beerq.getQuotesFromIndices([32, 10]), expected);
+  });
+});
+
+describe('BeerQuote.getLanguagesList()', function () {
+  let expected = ["eng", "ita"];
+  it('should return ' + expected, function () {
+    assert.deepEqual(beerq.getLanguagesList(), expected);
   });
 });

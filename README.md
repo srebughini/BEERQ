@@ -28,7 +28,7 @@ import { BeerQuote } from "beerq"
 let beerQuote = BeerQuote("eng");
 
 // Extract list of authors
-let authorList = beerQuote.getAuthorList());
+let authorList = beerQuote.getAuthorList();
 
 // Extract a random quote
 let randomQuote = beerQuote.getRandomQuote();

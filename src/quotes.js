@@ -1,5 +1,3 @@
-import { VectorUtils } from "./utils.js"
-
 let quoteListEng = [
     { quote: "Now is the time to drink!", author: "Horace" },
     { quote: "Beer is the proof that god loves us and wants us to be happy.", author: "Benjamin Franklin" },
@@ -156,18 +154,119 @@ let quoteListEng = [
     { quote: "There is nothing which has been yet contrived by man, by which so much happiness is produced as by a good tavern or inn.", author: "Samuel Johnson" },
     { quote: "How much of our literature, our political life, our friendships and love affairs, depend on being able to talk peacefully in a bar!", author: "John Wain" },
     { quote: "The pub is the internet. It’s where information is gathered, collated and addressed.", author: "Rhys Ifans" },
-    { quote: "Shoulder the sky, my lad, and drink you ale.", author: "Alfred Edward Housman" }
-
+    { quote: "Shoulder the sky, my lad, and drink you ale.", author: "Alfred Edward Housman" },
+    { quote: "Two beer or not two beer: that is the passion.", author: "Homer Simpson" }
 ]
 
+let quoteListIta = [
+    { quote: "I teologi pensano di sapere le domande.Gli scienziati pensano di sapere le risposte.Io penso che sia ora di bere un’altra birra.", author: "Anonimo" },
+    { quote: "Tutti noi abbiamo bisogno di credere in qualcosa: io credo che tra poco mi farò una birra.", author: "Homer Simpson" },
+    { quote: "Come ci si può divertire in una festa in cui le birre sono calde e le donne sono fredde?", author: "Groucho Marx" },
+    { quote: "Quando morirò, seppellitemi in una cassa. Di birra.", author: "Anonimo" },
+    { quote: "Andrà tutto come deve andare, quindi apriti una birra e goditi la vita.", author: "Fabrizio Caramagna" },
+    { quote: "Sarebbe un mondo migliore se la birra gonfiasse le tette anziché la pancia.", author: "Anonimo" },
+    { quote: "La gente porta rancore, la notte porta consiglio, la mamma porta pazienza, io porto le birre.", author: "Anonimo" },
+    { quote: "Verba volant. Scripta manent. Birra Tennent’s", author: "Anonimo" },
+    { quote: "Mi godo il sollievo di questa breve brezza, e provo a convincermi che la realtà sia questa: leggera, ilare e schiumosa di birra.", author: "Fabrizio Caramagna" },
+    { quote: "Quando bevi una birra da solo, non sei veramente solo. La birra è lì con te. Ti ascolta, ti ama, ti abbraccia e non ti giudica.", author: "Anonimo" },
+    { quote: "Metti da parte i tuoi doveri. Prendi un bottiglia di birra, assapora l’aria della sera, respira e sorridi, e ama le parole di chi ti sta intorno.", author: "Fabrizio Caramagna" },
+    { quote: "Amo il gusto della birra, la sua schiuma bianca, viva, la sua profondità ramata, il mondo che sorge all’improvviso attraverso le pareti brune e umide del vetro...la spuma negli angoli.", author: "Dylan Thomas" },
+    { quote: "Senza ombra di dubbio, la più grande invenzione nella storia dell’umanità è la birra. Oh, certo, sicuramente anche la ruota è stata una gran bella invenzione, ma vi assicuro che la ruota non va altrettanto bene con la pizza.", author: "Anonimo" },
+    { quote: "Se Adamo avesse saputo fare la birra, giammai Eva avrebbe potuto tentarlo, con la sua mela.", author: "Marcel Gocar" },
+    { quote: "Nella mia vita mi sono innamorato solo di una bottiglia di birra e di uno specchio.", author: "Anne Sexton" },
+    { quote: "Dio ha una voce bionda, morbida e piena, come la birra.", author: "Sid Vicious" },
+    { quote: "Ci sono giornate che vanno affrontate con un sorriso, altre con una birra.", author: "Fabrizio Caramagna" },
+    { quote: "Se non hanno mai dato il premio nobel a quello che ha inventato la birra non sono credibili.", author: "Anonimo" },
+    { quote: "Tu porta una cassa di birra e di pensieri sognanti e un paio di sorrisi giusti. Al resto ci penso io.", author: "Fabrizio Caramagna" },
+    { quote: "Non è la birra una santa libagione di sincerità? La pozione che dissipa ogni ipocrisia, ogni sciarada di belle maniere? Una bevanda che non fa altro che incitare i suoi seguaci a urinare in tutta innocenza, ad aumentare di peso in tutta franchezza.", author: "Milan Kundera" },
+    { quote: "Mi siedo qui e bevo la mia buona birra Wittenbergische e il regno di Dio viene da sé.", author: "Martin Lutero" },
+    { quote: "Una pinta di birra è un pasto da re.", author: "William Shakespeare" },
+    { quote: "La birra ha un buon sapore in gola, freddo e amaro, ed i tre ragazzi e la birra e la gratuità della situazione mi fanno sentire bene e ridere sempre. Rido, e il mio rossetto lascia una macchia rossa come una falce di luna insanguinata sulla parte superiore della lattina di birra.", author: "Sylvia Plath" },
+    { quote: "Esistono bionde intelligenti? Si, le birre.", author: "Anonimo" },
+    { quote: "Un pub conosce tanti segreti quanti ne conosce una chiesa.", author: "Joyce Carey" },
+    { quote: "La birra non è la soluzione ai problemi ma alcool + malto + luppolo + lievito è una soluzione perfetta.", author: "Fabrizio Caramagna" },
+    { quote: "L’acqua può diventare anche una buona bevanda,se mescolata con malto e luppolo!", author: "Proverbio tedesco" },
+    { quote: "Quanta birra c’è nell’intelligenza tedesca?", author: "Friedrich Nietzsche" },
+    { quote: "Bere una birra è come fare sesso. Se lo fai in due è meglio.", author: "Anonimo" },
+    { quote: "Come quelle risate che partono così, squillanti e meravigliosamente scomposte, tra una fetta di pizza e un bicchiere di birra.", author: "Fabrizio Caramagna" },
+    { quote: "Ho un sacco di problemi. Posalo nell’angolo che ci facciamo una birra.", author: "Anonimo" },
+    { quote: "Quand’ero giovane e ordinavo una birra te la davano dopo 30 secondi. Adesso dopo 30 secondi ti arriva il cameriere tatuato che ti racconta le origini e il processo di preparazione di ogni singola birra del menù che quando ha finito ti ricoverano in ospedale per disidratazione.", author: "Anonimo" },
+    { quote: "Date a un uomo una birra e ci perderà un’ora. Insegnategli a farsela da se e ci perderà una vita intera.", author: "The Home Brew Company" },
+    { quote: "Chi beve birra, si addormenta più velocemente; chi dorme più a lungo, non pecca; chi non pecca, entra in Paradiso! Beviamo birra!", author: "Martin Lutero" },
+    { quote: "La bocca di un uomo completamente felice è piena di birra.", author: "Massima dell’antico Egitto" },
+    { quote: "Basta una birra a colazione e le ragnatele se ne vanno, la voce ti si alza di due ottave e ti sorge un bel sole dentro.", author: "Robert De Niro" },
+    { quote: "In Belgio, il magistrato ha la dignità di un principe, ma per Bacco, è altrettanto vero che il birraio è un re.", author: "Emile Verhaeren" },
+    { quote: " Una birra, per favore. Signore, questa è una gelateria. Ah, ok. In cono grande, allora...", author: "Anonimo" },
+    { quote: "24 ore in un giorno, 24 birre in una cassa. Una coincidenza?", author: "Stephen Wright" },
+    { quote: "Tenetevi le vostre biblioteche, tenetevi le vostre istituzioni penali, tenetevi le vostre scuole dementi e dateci della birra. Credete che l’uomo abbia bisogno di regole, ma egli vuole della birra. L’umanità non ha bisogno delle vostra morale, vuole della birra. Non ha bisogno delle vostre letture o della vostra carità. Lo spirito dell’uomo è stato nutrito di cose indigeste, e adesso questo spirito vuole fare buon uso della birra.", author: "Henri Miller" },
+    { quote: "Resta con la tua birra, la birra è un flusso continuo di sangue, un’amante continua.", author: "Charles Bukowski" },
+    { quote: "Il pane è l’energia della vita, ma la birra è la vita stessa.", author: "Proverbio inglese" },
+    { quote: "La fermentazione e la civilizzazione sono inseparabili. ", author: "John Ciardi" },
+    { quote: "Non ci sono cattive birre. Alcune hanno semplicemente un gusto migliore di altre.", author: "Billy Carter" },
+    { quote: "Ho 29 anni. Per i 18enni sono un vecchio. Per i 40enni sono un giovane. Per i 60enni sono un ragazzo. Per me, una birra. Fredda. Grazie.", author: "Anonimo" },
+    { quote: "E’ un buon vento quello che ha spinto gli uomini verso la birra.", author: "Washington Irving" },
+    { quote: "L’eternità è fatta dei primi sorsi di birra.", author: "Proverbio tedesco" },
+    { quote: "Se uno non ha amici veri, con cui farsi una birra e porsi domande senza risposta, qualcosa ha sbagliato.", author: "Anonimo" },
+    { quote: "Chiunque produrrà birra di cattiva qualità sarà preso con la forza e gettato nel letame.", author: "Editto della città di Danzica, XI secolo" },
+    { quote: "Chi siamo? Da dove veniamo? Dove stiamo andando?Perché la birra al limone?", author: "Anonimo" },
+    { quote: "Quando la bevo sto benissimo: l’umore è allegro, il cuore contento e il fegato felice.", author: "Tavoletta sumera, 3600 a.C." },
+    { quote: "Era un uomo saggio chi ha inventato la birra.", author: "Platone" },
+    { quote: "La birra, al contrario del vino, non ha bisogno di sole per maturare: la luna le è ampiamente sufficiente.", author: "Jacques Josse" },
+    { quote: "Chi acquista un terreno, acquista delle pietre. Chi acquista della carne, acquista degli ossi. Chi acquista delle uova, acquista dei gusci.Ma chi acquista una buona birra,fa un affare.", author: "Proverbio inglese" },
+    { quote: "Com’è gradevole il tiglio nelle sere di Giugno! L’aria è si dolce che a palpebre chiuse annusi il vento che risuona; la città è vicina e porta aromi di birra e di vino.", author: "Arthur Rimbaud" },
+    { quote: "La fermentazione della birra potrebbe essere stata una scoperta più grande del fuoco.", author: "David Wallace" },
+    { quote: "Quando morirò, voglio decompormi in un barile di birra ed essere servito in tutti i pub di Dublino.", author: "JpDonleavy" },
+    { quote: "Il bello della birra è che si può bere dalle undici del mattino fino a colazione.", author: "Klaus Augenthaler" },
+    { quote: "E’ vero, c’è birra gratis nel paradiso irlandese.", author: "Kevin Hearne" },
+    { quote: "Bere birra analcolica e’ come ascoltare un film porno alla radio.", author: "Anonimo" },
+    { quote: "Assetato portò la pinta alle labbra, e, come il suo fresco ristoro cominciò a lenire la gola, ringraziò il cielo che in un mondo così pieno di malvagità ci fosse ancora una cosa buona come la birra.", author: "Rafael Sabatini" },
+    { quote: "Non tutta la chimica è cattiva. Senza la chimica, come l’idrogeno e l’ossigeno per esempio, non ci sarebbe modo di fare l’acqua, un ingrediente fondamentale della birra.", author: "Dave Barry" },
+    { quote: "La cucina inglese: se è fredda, c’è della zuppa. Se è calda, c’è della birra.", author: "Proverbio" },
+    { quote: "La perfezione? Una bella donna nuda che spina birra dai capezzoli.", author: "Paolo Burini" },
+    { quote: "Chi beve birra light non ama il gusto della birra, gli piace soltanto pisciare parecchio.", author: "Anonimo" },
+    { quote: "Se ne vanno sempre i migliori e mai quelli che bevono la birra nei bicchieri di plastica.", author: "Anonimo" },
+    { quote: "Nel vino c’è la saggezza, nella birra c’è la forza, nell’acqua ci sono i batteri.", author: "Proverbio tedesco" },
+    { quote: "Buona birra è cibo, bevanda e vestito.", author: "Proverbio tedesco" },
+    { quote: "Mostratemi una donna che ami davvero il gusto sulla birra, e io conquisterò il mondo.", author: "Guglielmo II di Prussia" },
+    { quote: "La birra si abbina all’idea del viaggio. In tutti i paesi c’è sempre una birra da scoprire, la birra locale è una costante universale, per l’intima soddisfazione di degustarla alla fine della giornata.", author: "Serge Joncour" },
+    { quote: "La birra è tra le bevande più utili, tra i cibi più gustosi e tra i farmaci più piacevoli.", author: "Anonimo" },
+    { quote: "Si può giudicare un popolo dal suo caffè, le sue sigarette, la sua birra.", author: "Michel Beaulieu" },
+    { quote: "Filosofia e birra sono la stessa cosa, consumate, modificano tutte le percezioni che avevamo del mondo.", author: "Dominique-Joël Beaupré" },
+    { quote: "Perché una birra e’ meglio di una donna? perché e’ sempre bagnata, perché dopo che te ne sei fatta una bionda te ne puoi fare subito una rossa, perché non si lamenta se te ne fai subito un’altra.", author: "Anonimo" },
+    { quote: "La birra contiene sicuramente degli ormoni femminili… infatti quando si beve molta birra non si riesce a guidare la macchina e si dicono un sacco di cretinate… e si è costretti a pisciare seduti!", author: "Anonimo" },
+    { quote: "Una birra forte, un tabacco profumato e una donna, questo è piacere.", author: "Johann Wolfgang Goethe" },
+    { quote: "Conoscere i luoghi, vicino o lontani, non vale la pena, non è che teoria; saper dove meglio si spini la birra, è pratica vera, è geografia.", author: "Johann Wolfgang Goethe" },
+    { quote: "La birra è la prova che Dio ci ama e vuole che siamo felici.", author: "Benjamin Franklin" },
+    { quote: "Se uomo ama donna più di birra gelata davanti a tv con finale champions forse vero amore, ma non vero uomo.", author: "Vujadin Boskov" },
+    { quote: "C’e’ gente che ha l’iPhone, chi ha l’iPad. Io ho l’iNeken.", author: "Anonimo" },
+    { quote: "Vorrei il solito. Una birra, qualche sigaretta. Un ‘mi manchi’, un bacio o un ‘dov’eri?’. E poi vorrei un’altra birra. Che non si sa mai.", author: "Anonimo" },
+    { quote: "Tutta questa birra e solo una bocca", author: "Anonimo" }
+]
+
+let quoteDict = {
+    "eng": quoteListEng,
+    "ita": quoteListIta
+}
+
+export function languages() {
+    return Object.keys(quoteDict);
+}
+
 export function quotes(language) {
-    let _quoteListEng = quoteListEng;
-    if ( language == "eng")
-    {
-        return _quoteListEng;
+    let _languagesList = languages();
+
+    if (language == undefined) {
+        let _quoteList = []
+        for (i = 0; i < _languagesList.length; i++) {
+            _quoteList = _quoteList.concat(quoteDict[_languagesList[i]])
+        }
+        return _quoteList
     }
-    else
-    {
-        return _quoteListEng;   
+    else {
+        let _quoteList = []
+        if (_languagesList.includes(language)) {
+            _quoteList = quoteDict[language]
+        }
+        return _quoteList;
     }
 }

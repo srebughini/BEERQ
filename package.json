@@ -1,6 +1,6 @@
 {
   "name": "beerq",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "main": "./src/beerq.js",
   "repository": {
     "type": "git",
@@ -27,10 +27,14 @@
   "type": "module",
   "dependencies": {
     "mocha": "^10.2.0",
-    "package.json": "^0.0.0"
+    "package.json": "0.0.0"
   },
   "directories": {
     "example": "example",
     "test": "test"
+  },
+  "devDependencies": {
+    "browser-resolve": "^2.0.0",
+    "esmify": "^2.1.1"
   }
 }

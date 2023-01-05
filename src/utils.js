@@ -14,6 +14,7 @@ export function VectorUtils() {
         return indices;
     }
 
+
     function getUnique(array) {
         return array.filter((v, i, a) => a.indexOf(v) === i);
     }
@@ -45,5 +46,10 @@ export function VectorUtils() {
         return indices;
     }
 
-    return { getRandomIndex, getAllIndexOf, getUnique, getVectorofRandomIndices }
+    return {
+        getRandomIndex,
+        getAllIndexOf,
+        getUnique,
+        getVectorofRandomIndices
+    }
 }

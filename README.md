@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    Our website is [here](https://srebughini.github.io/BEERQ/)
+    Our website is <a href="https://srebughini.github.io/BEERQ/">here</a>.
 </p>
 
 

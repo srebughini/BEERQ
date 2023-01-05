@@ -257,7 +257,7 @@ export function quotes(language) {
 
     if (language == undefined) {
         let _quoteList = []
-        for (i = 0; i < _languagesList.length; i++) {
+        for (let i = 0; i < _languagesList.length; i++) {
             _quoteList = _quoteList.concat(quoteDict[_languagesList[i]])
         }
         return _quoteList

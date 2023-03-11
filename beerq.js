@@ -575,6 +575,66 @@ let quoteListEng = [{
 }, {
   quote: "Two beer or not two beer: that is the passion.",
   author: "Homer Simpson"
+}, {
+  quote: "A beer a day, keeps the worries away",
+  author: "ChatGPT"
+}, {
+  quote: "Life is too short to drink bad beer",
+  author: "ChatGPT"
+}, {
+  quote: "Raise a glass of beer, to good friends and good cheer",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is liquid happiness in a glass",
+  author: "ChatGPT"
+}, {
+  quote: "A cold beer on a hot day, is all one needs to say",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is a conversation starter, and a friendship creator",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is not just a drink, it's a way of life",
+  author: "ChatGPT"
+}, {
+  quote: "If life gives you lemons, grab a beer and make lemonade",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is the answer, but I can't remember the question",
+  author: "ChatGPT"
+}, {
+  quote: "Beer may not solve all problems, but it sure makes them taste better",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is not just a drink, it's a journey of self-discovery",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is the proof that even the simplest things in life can bring great joy",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is a reminder that sometimes the most profound truths can be found in the simplest things",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is a celebration of life, a toast to the present and a hope for the future",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is a symbol of unity, bringing people together in good times and in bad",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is the embodiment of the human spirit, a reflection of our desires and aspirations",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is a reminder that in the midst of chaos and uncertainty, there is always something to be grateful for",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is a metaphor for life, a reminder that the journey is just as important as the destination",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is a symbol of freedom, a reminder that in the face of adversity, we can always find the strength to persevere",
+  author: "ChatGPT"
+}, {
+  quote: "Beer is a reminder that in the end, all that truly matters is the company we keep and the memories we create",
+  author: "ChatGPT"
 }];
 let quoteListIta = [{
   quote: "I teologi pensano di sapere le domande.Gli scienziati pensano di sapere le risposte.Io penso che sia ora di bere un’altra birra.",
@@ -822,6 +882,60 @@ let quoteListIta = [{
 }, {
   quote: "Tutta questa birra e solo una bocca",
   author: "Anonimo"
+}, {
+  quote: "La birra è un simbolo della libertà, un ricordo che di fronte all'adversità, possiamo sempre trovare la forza per perseverare",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è una metafora per la vita, un promemoria che il viaggio è altrettanto importante come la destinazione",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è una celebrazione della vita, un brindisi al presente e una speranza per il futuro",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è un simbolo di unità, unendo le persone in momenti felici e in quelli difficili",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è la prova che anche le cose più semplici della vita possono portare grande gioia",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è un invito a godersi il presente e a non preoccuparsi troppo del futuro",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è un ricordo che, a volte, le verità più profonde si possono trovare nelle cose più semplici",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è una celebrazione della creatività umana e della capacità di trasformare gli ingredienti semplici in qualcosa di straordinario",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è un promemoria che in mezzo al caos e all'incertezza, c'è sempre qualcosa per cui essere grati",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è un simbolo della fratellanza umana, unendo le persone attraverso la condivisione di un bicchiere",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è una rappresentazione della bellezza della semplicità, dimostrando che a volte meno è di più",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è un simbolo dell'armonia, unendo sapori e aromi per creare un'esperienza unica",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è una celebrazione della diversità, dimostrando che la differenza è ciò che rende la vita interessante",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è un promemoria che la felicità è spesso nascosta in piccole cose",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è una rappresentazione della resilienza umana, dimostrando che anche nei momenti più difficili, possiamo sempre trovare la forza per andare avanti",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è un simbolo della speranza, un invito a guardare sempre avanti e a non perdere mai la fede",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è una celebrazione dell'umanità, unendo le persone attraverso la condivisione di un'antica tradizione",
+  author: "ChatGPT"
+}, {
+  quote: "La birra è un promemoria che la vita è preziosa e va vissuta al massimo",
+  author: "ChatGPT"
 }];
 let quoteDict = {
   "eng": quoteListEng,
